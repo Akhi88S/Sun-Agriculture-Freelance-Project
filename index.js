@@ -149,13 +149,13 @@ app.use('/', pages);
 
 
 // start the server
-/* var port = 3000;
+ var port = 3000;
 app.listen(port, function (req, res) {
   console.log('Server started on port ' + port);
-}); */
-
+});
+/*
 var app_port = process.env.YOUR_PORT || process.env.PORT || 80||3000;
 var app_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(app_port, app_host, function() {
   console.log('Listening on port %d', app_port);
-});
+}); */
