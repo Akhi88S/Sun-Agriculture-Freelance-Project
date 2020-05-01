@@ -14,7 +14,7 @@ router.get('/', function (req, res, next) {
       console.log(err);
 
     res.render('index', {
-      title: "AA",
+      title: "Sun Groceries",
       content: "AA",
     });
   });
