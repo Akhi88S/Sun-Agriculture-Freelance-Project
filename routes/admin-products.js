@@ -74,6 +74,7 @@ router.post('/add-product', function (req, res, next) {
   if (errors) {
     Category.find(function (err, categories) {
       res.render('admin/add-product', {
+
         errors: errors,
         title: title,
         desc: desc,
