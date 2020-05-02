@@ -208,8 +208,8 @@ res.sendFile('yay.html', {root: __dirname });
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'akhilkanapala',
-      pass: 'Akhilgmail33$'
+      user: 'weirdzombies',
+      pass: 'weirdzombie33'
     }
   });
 
@@ -225,15 +225,16 @@ res.sendFile('yay.html', {root: __dirname });
   if (err) {
       console.log(err);
   } else {
+    var toemail=['weirdzombies@gmail.com','akhilkanapala@gmail.com']
   var mailOptions = {
-    from: 'akhilkanapala@gmail.com',
-    to:'akhilkanapala@gmail.com yashukan@gmail.com',
+    from: 'weirdzombies@gmail.com',
+    to: toemail,
     subject: 'New Order',
     html: data
 
     };
     var mailOptions1 = {
-      from: 'akhilkanapala@gmail.com',
+      from: 'weirdzombies@gmail.com',
       to:user.email,
       subject: 'Your Order',
       html: data
@@ -256,6 +257,7 @@ res.sendFile('yay.html', {root: __dirname });
 
   };
 });
+ delete req.session.cart;
 });
 
 module.exports = router;

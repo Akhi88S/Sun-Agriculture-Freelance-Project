@@ -1,5 +1,19 @@
 <% include _layouts/header %>
+<html>
+<head>
+<style media="screen">
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 
+  }
+</style>
+</head>
+<body>
+<a href="/" class="btn btn-secondary" style="float:right;">Go back</a>
 <div class="row top-row products p">
   <% products.forEach(function(p) { %>
   <div class="col-xs-12 product">
@@ -16,5 +30,6 @@
   </div>
   <% }); %>
 </div>
-
+</body>
+</html>
 <% include _layouts/footer %>
