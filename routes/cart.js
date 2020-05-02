@@ -139,6 +139,7 @@ router.post('/search', function (req, res, next) {
   Product.find({}, function (err, products) {
     res.render('all-products2', {
       title: "Search",
+      val :val,
       products: products,
       categories: categories
 
