@@ -209,7 +209,7 @@ res.sendFile('yay.html', {root: __dirname });
     service: 'gmail',
     auth: {
       user: 'weirdzombies',
-      pass: 'weirdzombie33'
+      pass: 'Weirdzombiegmail33$'
     }
   });
 
