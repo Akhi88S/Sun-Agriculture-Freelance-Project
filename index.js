@@ -152,12 +152,7 @@ app.use('/', pages);
 app.listen(port, function (req, res) {
   console.log('Server started on port ' + port);
 }); */
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.ejs'));
-});
+
 var app_port = process.env.YOUR_PORT || process.env.PORT || 80||3000;
 var app_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(app_port, app_host, function() {
