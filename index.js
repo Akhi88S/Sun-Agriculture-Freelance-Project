@@ -102,8 +102,7 @@ app.use(expressValidator({
       var extension = (path.extname(filename)).toLowerCase();
 
       switch (extension) {
-        case '.jpg':
-          return '.jpg';
+        case '.jpg':          return '.jpg';
         case '.jpeg':
           return '.jpeg';
         case '.png':

@@ -66,7 +66,7 @@ router.get('/:category/:product', function (req, res, next) {
     if (err) {
       console.log(err);
     } else {
-      var galleryDir = 'public/product-images/' + product._id + '/gallery';
+      var galleryDir = 'public/img/' + product._id + '/gallery';
       fs.readdir(galleryDir, function (err, files) {
         if (err) {
           console.log(err);
