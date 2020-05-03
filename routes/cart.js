@@ -49,7 +49,7 @@ router.get('/add/:product', function (req, res, next) {
     }
     // console.log(req.session.cart);
     req.flash('success', 'Product added to cart!');
-    res.redirect('back');
+    res.redirect('/products');
   });
 });
 
@@ -226,7 +226,7 @@ res.sendFile('yay.html', {root: __dirname });
   if (err) {
       console.log(err);
   } else {
-    var toemail=['weirdzombies@gmail.com','akhilkanapala@gmail.com']
+    var toemail=['weirdzombies@gmail.com','akhilkanapala@gmail.com','yashukan@gmail.com']
   var mailOptions = {
     from: 'weirdzombies@gmail.com',
     to: toemail,

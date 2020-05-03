@@ -19,7 +19,7 @@ var adminCategories = require('./routes/admin-categories');
 var adminProducts = require('./routes/admin-products');
 
 // connect to db
-mongoose.connect(config.database);
+mongoose.connect(config.database,{ useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error: '));
 db.once('open', function () {
