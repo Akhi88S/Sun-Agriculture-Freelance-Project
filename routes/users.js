@@ -48,7 +48,7 @@ router.post('/register', function (req, res, next) {
 
       if (user) {
         req.flash('danger', 'Username exists, please choose another');
-        res.redirect('/');
+        res.redirect('/users/register');
       } else {
         var user = new User({
 
@@ -69,7 +69,7 @@ router.post('/register', function (req, res, next) {
                 console.log(err);
               } else {
                 req.flash('success', 'You are now registerd!');
-                res.redirect('/login')
+                res.redirect('/users/login');
               }
             });
           });
