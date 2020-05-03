@@ -90,7 +90,7 @@ router.post('/add-product', function (req, res, next) {
           title: title,
           desc: desc,
           price: price,
-          categories: categories,
+        category: category,
           image:image,
         });
       } else {
