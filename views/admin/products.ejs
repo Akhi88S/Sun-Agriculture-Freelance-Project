@@ -31,11 +31,7 @@
         <%= product.category %>
       </td>
       <td>
-        <% if (product.image == '') { %>
-        <img class="noimage" src="/images/noimage.png">
-        <% } else { %>
-        <img class="noimage" src="/img/<%= product._id %>/<%= product.image %>">
-        <% } %>
+        <%= product.image %>
       </td>
       <td><a href="/admin/products/edit-product/<%= product._id %>">Edit</a></td>
 

@@ -59,28 +59,19 @@ router.get('/:category', function (req, res, next) {
 */
 router.get('/:category/:product', function (req, res, next) {
 
-  var galleryImages = null;
   var loggedIn = (req.isAuthenticated()) ? true : false;
 
   Product.findOne({ slug: req.params.product }, function (err, product) {
     if (err) {
       console.log(err);
     } else {
-      var galleryDir = 'public/img/' + product._id + '/gallery';
-      fs.readdir(galleryDir, function (err, files) {
-        if (err) {
-          console.log(err);
-        } else {
-          galleryImages = files;
 
           res.render('product-details', {
             title: product.title,
             p: product,
-            galleryImages: galleryImages,
             loggedIn: loggedIn
           });
-        }
-      });
+
 
     }
   });

@@ -22,7 +22,7 @@
 </div>
 <div class="row top-row">
   <div class="col-xs-12 col-md-5">
-    <img src="/img/<%= p.id %>/<%= p.image %>" alt="" class="spi">
+    <img src="<%= p.image %>" alt="" class="spi">
     <br>
   </div>
   <div class="col-xs-12 col-md-6">
@@ -38,20 +38,6 @@
     <p>You must be logged in to purchase items.</p>
     <% }; %>
   </div>
-  <div class="col-xs-12">
-    <ul class="gallery">
-      <% galleryImages.forEach(function(image) { %>
-      <% if(image != 'thumbs') { %>
-      <li>
-        <a data-fancybox="gallery" href="/img/<%= p.id %>/gallery/<%= image %>">
-          <img src="/img/<%= p.id %>/gallery/thumbs/<%= image %>" alt="">
-        </a>
-      </li>
-      <% } %>
-      <% }); %>
-    </ul>
-  </div>
-
 
 </div>
 </body>

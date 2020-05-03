@@ -44,20 +44,19 @@ router.get('/add-category', isAdmin, function (req, res, next) {
 */
 router.post('/add-category', function (req, res, next) {
 
-  var categoryFile = typeof req.files.image !== 'undefined' ? req.files.image.name : '';
 
   req.checkBody('title', 'Title must have a value').notEmpty();
-  req.checkBody('image', 'You must upload an image').isImage(categoryFile);
 
   var title = req.body.title;
   var slug = title.replace(/\s+/g, '-').toLowerCase();
-
+  var image= req.body.image;
   var errors = req.validationErrors();
 
   if (errors) {
     res.render('admin/add-category', {
       errors: errors,
-      title: title
+      title: title,
+      image:image
     });
   } else {
     Category.findOne({ slug: slug }, function (err, category) {
@@ -65,13 +64,14 @@ router.post('/add-category', function (req, res, next) {
         req.flash('danger', 'Category title exists, choose another');
         res.render('admin/add-category', {
           title: title,
-          slug: slug
+          slug: slug,
+          image:image
         });
       } else {
         var category = new Category({
           title: title,
           slug: slug,
-          image: categoryFile
+          image: image
         });
 
         category.save(function (err) {
@@ -85,26 +85,6 @@ router.post('/add-category', function (req, res, next) {
 
               req.app.locals.categories = categories;
 
-              mkdirp('public/category-images/' + category.slug, function (err) {
-                return console.log();
-              });
-              mkdirp('public/category-images/' + category.slug + '/gallery', function (err) {
-                return console.log();
-              });
-              mkdirp('public/category-images/' + category.slug + '/gallery/thumbs', function (err) {
-                return console.log();
-              });
-
-              if (categoryFile != '') {
-                var categoryImage = req.files.image;
-                var path = 'public/category-images/' + category.slug + '/' + categoryImage;
-                console.log(categoryImage)
-                console.log(path)
-
-                categoryImage.mv(path, function (err) {
-                  return console.log(err);
-                });
-              }
             }
           });
           req.flash('success', 'Category added');
