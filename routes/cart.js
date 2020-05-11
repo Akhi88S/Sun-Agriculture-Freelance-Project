@@ -231,14 +231,20 @@ res.sendFile('yay.html', {root: __dirname });
     from: 'weirdzombies@gmail.com',
     to: toemail,
     subject: 'New Order',
-    html: data
+    headers: {
+      'priority': 'high',
+   },
 
+    html: data
     };
     var mailOptions1 = {
-      from: 'weirdzombies@gmail.com',
+      from: ['weirdzombies@gmail.com'],
       to:user.email,
       subject: 'Your Order',
-      html: data
+      html: data,
+      headers: {
+        'priority': 'high',
+     },
 
       };
   transporter.sendMail(mailOptions, function(error, info){

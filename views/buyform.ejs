@@ -32,12 +32,12 @@
 
             </div>
             <div class="form-label-group">
-              <input type="text" name="username" class="form-control" value=<%= user.username%> required autofocus>
+              <input type="text" name="username" class="form-control" value=<%= user.username%> required>
               <!-- <label for="username">Username</label> -->
             </div>
 
-            <div class="form-label-group">
-              <input type="textarea" name="addr" class="form-control" placeholder="Enter Location to deliver" required>
+            <div class="form-label-group" id="location">
+              <input type="textarea" name="addr" class="form-control" placeholder="Enter Location to deliver" required autofocus>
               <!-- <label for="password">Password</label> -->
             </div>
 
@@ -100,5 +100,8 @@
 </div>
 </body>
 </html>
+<script>
+alert("Enter Location to deliver");
 
+</script>
 <% include _layouts/footer %>
