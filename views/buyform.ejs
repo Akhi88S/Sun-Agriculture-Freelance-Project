@@ -37,7 +37,9 @@
             </div>
 
             <div class="form-label-group" id="location">
-              <input type="textarea" name="addr" class="form-control" placeholder="Enter Location to deliver" required autofocus>
+              <input type="textarea" name="addr" class="form-control" placeholder="Enter Location to deliver" required autofocus
+              oninvalid="this.setCustomValidity('Enter location')"
+                oninput="this.setCustomValidity('')">
               <!-- <label for="password">Password</label> -->
             </div>
 
@@ -100,8 +102,4 @@
 </div>
 </body>
 </html>
-<script>
-alert("Enter Location to deliver");
-
-</script>
 <% include _layouts/footer %>
