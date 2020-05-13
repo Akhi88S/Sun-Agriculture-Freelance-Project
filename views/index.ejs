@@ -116,7 +116,8 @@ html,body{
     <div class="card" style="width: 18rem; margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */">
-      <img class="card-img-top" src=" <%= c.image %>" alt="Card image cap" width="290" height="150">
+    <a href="/products/<%= c.slug %>"><img class="card-img-top"  src=" <%= c.image %>" alt="Card image cap" width="290" height="150">
+    </a>
       <div class="card-body">
         <h5 class="card-title"><%= c.title %></h5>
         <p class="card-text">Chekout our <%= c.title%> section  </p>
