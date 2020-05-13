@@ -9,8 +9,10 @@ var CategorySchema = mongoose.Schema({
   },
   slug: {
     type: String
+  },
+  image: {
+    type: String
   }
-
 });
 
 var Category = mongoose.model("Category", CategorySchema);

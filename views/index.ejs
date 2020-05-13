@@ -107,59 +107,31 @@ html,body{
 </div>
 </div>
 <%a=0%>
+
+<div class="container">
 <div class="row">
+
   <% categories.forEach(function(c) { %>
-
-
-  <a class="col-lg-4 col-sm-6 about" href="/products/<%= c.slug %>">
-    <%= c.title %>
-  </a>
-
-  <% if (a <= 0) { %>
-  <div class="row">
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.slug %>"><img src="https://c1.wallpaperflare.com/preview/300/6/482/cooking-drops-food-foodie.jpg"></a>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="card" style="width: 18rem; margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */">
+      <img class="card-img-top" src=" <%= c.image %>" alt="Card image cap" width="290" height="150">
+      <div class="card-body">
+        <h5 class="card-title"><%= c.title %></h5>
+        <p class="card-text">Chekout our <%= c.title%> section  </p>
+        <a href="/products/<%= c.slug %>" class="btn btn-primary"><%= c.title %> section</a>
       </div>
     </div>
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.title %>"><img src="https://c1.wallpaperflare.com/preview/715/492/35/breakfast-carrots-food-foodie.jpg"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.title %>"><img src="https://c1.wallpaperflare.com/preview/538/358/515/carrots-cooking-fresh-fruits.jpg"></a>
-      </div>
-    </div>
+
+
   </div>
-
-  <% a=10 %>
-
-<%} else if(a>9) { %>
-  <div class="row">
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.title %>"><img src="https://c4.wallpaperflare.com/wallpaper/437/455/804/food-fruit-strawberries-blood-orange-wallpaper-preview.jpg"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.title %>"><img src=" https://c4.wallpaperflare.com/wallpaper/870/517/293/colorful-food-fruit-melons-wallpaper-preview.jpg"></a>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 categories">
-      <div class="thumbnail">
-        <a href="/products/<%= c.title %>"><img src="https://c4.wallpaperflare.com/wallpaper/165/537/237/food-lunch-closeup-fruit-wallpaper-preview.jpg"></a>
-      </div>
-    </div>
-  </div>
-
-  <% } %>
 
   <% }); %>
+</div>
 
 </div>
+
 <!--
 
 <div class="row">
