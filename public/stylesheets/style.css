@@ -626,19 +626,19 @@ input:focus, input[type]:focus, .uneditable-input:focus {
 @media only screen and (min-width:1px) and (max-width : 360px) /*MOBILE(SMALL)*/
 {
   .carousel-item {
-    min-height: 200px;
+    min-height: 300px;
 }
 
 }
 @media only screen and (min-width:361px) and (max-width:420px) /*MOBILE(MEDIUM)*/
 {
   .carousel-item {
-    min-height: 250px;
+    min-height: 350px;
 }
 }
 @media only screen and (min-width:421px) and (max-width:625px) /*MOBILE(LARGE)*/
 {
   .carousel-item {
-    min-height: 300px;
+    min-height: 400px;
 }
 }
