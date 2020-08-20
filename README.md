@@ -6,3 +6,5 @@
 Freelance Project
 
 URL: https://sun-groceries.herokuapp.com/
+
+Note : **Some content was made private**
