@@ -6,5 +6,3 @@
 Freelance Project
 
 URL: https://sun-groceries.herokuapp.com/
-    (or)
-    http://www.sunfarmerveggies.ml/
