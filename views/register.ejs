@@ -1,0 +1,96 @@
+<% include _layouts/headerna %>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166233561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166233561-1');
+  </script>
+
+<style media="screen">
+  html{
+    overflow-x: hidden;
+
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+  }
+</style>
+
+  </head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-9 mx-auto" data-aos="zoom-in-down">
+      <div class="card card-signin flex-row my-5">
+        <div class="card-img-left d-none d-md-flex">
+          <!-- Background image for card set in CSS! -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <%= title %>
+          </h5>
+          <form class="form-signin" method="POST" action="/users/register">
+
+            <div class="form-label-group">
+              <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+              <!-- <label for="email">Email address</label> -->
+            </div>
+
+            <div class="form-label-group">
+              <input type="text" name="username" class="form-control" placeholder="Username" required>
+              <!-- <label for="username">Username</label> -->
+            </div>
+            <div class="form-label-group">
+              <input type="tel" minlength="10" maxlength="10" name="phno" class="form-control" placeholder="Enter Phone Number" required>
+              <!-- <label for="email">Email address</label> -->
+            </div>
+
+
+            <div class="form-label-group">
+              <input type="password" name="password" class="form-control" placeholder="Password" required>
+              <!-- <label for="password">Password</label> -->
+            </div>
+
+            <div class="form-label-group">
+              <input type="password" name="password2" class="form-control" placeholder="Confirm Password" required>
+              <!-- <label for="password2">Confirm password</label> -->
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
+              <%= title %></button>
+            <a class="d-block text-center mt-2 small" href="/users/login">Log In</a>
+            <hr class="my-4">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  $(function() {  
+     AOS.init({
+       offset:200,
+      duration:1000,
+    });
+  });
+
+  </script>
+
+</body>
+</html>
+<% include _layouts/footer %>

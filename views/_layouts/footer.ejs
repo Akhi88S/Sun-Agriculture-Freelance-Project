@@ -1,0 +1,47 @@
+</div>
+</div>
+</div><!-- /.container -->
+<br><br><br>
+<footer>
+  <div class="row"style= "display: flex;
+  align-items: center;
+  justify-content: center;">
+    <div class="col-md-6" style="display: flex;
+  align-items: center;
+  justify-content: center;" >
+      <ul class="footer-nav footer-right"style="display: flex;
+  align-items: center;
+  justify-content: center; margin-bottom:2px">
+        <li><a href="http://sunagbsc.org/" target="_blank"><i class="ion-logo-linkedin"></i></a></li>
+        <li><a href="http://sunagbsc.org/" target="_blank"><i class="ion-logo-facebook"></i></a></li>
+        <li><a href="http://sunagbsc.org/" target="_blank"><i class="ion-logo-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="row">
+    <p style="display: flex2;
+align-items: center;
+justify-content: center;
+margin-bottom: 2px;">
+      Copyright &copy; <span id='yr'></span> 
+      <br> All rights reserved by Akhil K 
+    </p>
+  </div>
+</footer>
+
+<script>
+  window.onload=function(){
+    let element=document.getElementById('yr')
+    if(element){
+      element.innerHTML=new Date().getFullYear()
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.3/dist/jquery.fancybox.min.js"></script>
+
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/main.js"></script>
+</body>
+
+</html>

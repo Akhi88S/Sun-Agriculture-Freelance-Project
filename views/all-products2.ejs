@@ -1,0 +1,65 @@
+<% include _layouts/header2 %>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166233561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166233561-1');
+  </script>
+<style media="screen">
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  overflow-x: hidden;
+   
+  }
+  
+</style>
+</head>
+<body>
+<a href="/" class="btn btn-secondary" style="float:right;">Go back</a>
+<br>
+
+<h2> Results based on your search  "<%= val %>"</h2>
+<div class="row top-row products p">
+  <% products.forEach(function(p) { %>
+  <div class="col-xs-12 product" data-aos="fade-up-left">
+    <div class="product-pimage">
+      <a href="/products/<%= p.category %>/<%= p.slug %>" class="pa">
+        <img class="pimage" src="<%= p.image %>" alt=""></a></div>
+    <h6>
+      <%= p.title %>
+    </h6>
+    <p>Price:
+      <%= parseFloat(p.price).toFixed(2) %>/-
+    </p>
+    <a href="/products/<%= p.category %>/<%= p.slug%>" class="vd">View Details &raquo;</a>
+  </div>
+  <% }); %>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  $(function() {  
+     AOS.init({
+       offset:200,
+      duration:1000,
+    });
+  });
+
+  </script>
+
+
+</body>
+</html>
+<% include _layouts/footer %>

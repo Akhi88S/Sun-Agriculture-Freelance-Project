@@ -1,0 +1,350 @@
+<% include _layouts/header %>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,618&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="/stylesheets/keyframesheader.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <script src="/javascripts/custom.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166233561-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166233561-1');
+  </script>
+
+<style media="screen">
+html{
+  overflow-x: hidden;
+}
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+overflow-x: hidden;
+ 
+}
+ .example_f {
+   border-radius: 4px;
+   background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding: 20px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+
+
+.visitor {
+   border-radius: 4px;
+   background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 20px;
+   padding: 20px;
+   width: 300px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ .visitor span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .visitor span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .visitor:hover span {
+   padding-right: 25px;
+ }
+ .visitor:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="top">
+
+
+<!-- start preloader -->
+<div class="preloader">
+  <div class="sk-spinner sk-spinner-wave">
+        <div class="sk-rect1"></div>
+         <div class="sk-rect2"></div>
+         <div class="sk-rect3"></div>
+         <div class="sk-rect4"></div>
+        <div class="sk-rect5"></div>
+     </div>
+  </div>
+  <!-- end preloader -->
+  <!-- <div class="container"> -->
+<!--
+
+  <div class="carousel slide multi-item-carousel" data-aos="fade-left" data-aos-duration="1500"data-aos-offset="400"  id="carouselExampleControls" data-ride="carousel" data-interval="4000">
+  <div class="carousel-inner abc">
+
+    <div class="carousel-item item active" style="background-image: url('http://sunagbsc.org/wp-content/uploads/2019/05/highres-corn-field.jpg')"></div>
+
+    <div class="carousel-item item " style="background-image: url('https://c1.wallpaperflare.com/preview/662/434/348/supermarket-vegetables-food-shop.jpg')"></div>
+
+    <div class="carousel-item item" style="background-image: url('http://sunagbsc.org/wp-content/uploads/2019/05/full-pic-seedling.jpg')"></div>
+    <div class="carousel-item item" style="background-image: url('http://sunagbsc.org/wp-content/uploads/2019/05/highres-rice-plants.jpg')"></div>
+
+
+    <div class="carousel-item item " style="background-image: url('http://sunagbsc.org/wp-content/uploads/2019/05/animal-husbandry.jpg')"></div>
+
+
+    <div class="carousel-item item " style="background-image: url('https://c1.wallpaperflare.com/preview/127/182/407/grocery-store-supermarket-vegetable-shop.jpg')"></div>
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+-->
+<header>
+<div class="container">
+  
+  <h2 class="slappearheading" data-aos="fade-right" data-aos-duration="2000">Sun Farmer Veggies</h2>
+</br>
+
+  
+
+    <div class="box1" data-aos="fade-left" data-aos-offset="300" data-aos-delay="1000">
+    <p><strong style="font-weight: bold;"> Sun Farmer Veggies </strong>delivers <strong style="font-weight: bold;"> organic vegetables & Fruits </strong> without any sort of
+      Chemicals used in cultivation.
+      The products in here was cultivated by students with utmost care and protection
+    Do contact us for furthter information about our cultivation process & methods.
+    <!-- by <strong style="font-weight: bold;"> <a href="http://sunagbsc.org/">Clicking here</a> </strong> -->
+</p>
+</div>
+</div>
+</header>
+<br>
+<%a=0%>
+
+<div class="container">
+<div class="row">
+
+  <% categories.forEach(function(c) { %>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="card card-radius" data-aos="flip-left" style="width: 18rem; margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */">
+    <a href="/products/<%= c.slug %>"><img class="card-img-top card-radius-img"  src=" <%= c.image %>" alt="Card image cap" width="290" height="150">
+    </a>
+      <div class="card-body">
+        <h5 class="card-title"><%= c.title %></h5>
+        <p class="card-text">Chekout our <%= c.title%> section  </p>
+        <a href="/products/<%= c.slug %>" class="btn btn-primary"><%= c.title %> section</a>
+      </div>
+    </div>
+  <br>
+  </div>
+
+  <% }); %>
+</div>
+
+</div>
+
+<!--
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 categories">
+    <div class="thumbnail">
+      <a href="/products/watches"><img src="https://c1.wallpaperflare.com/preview/617/935/591/apples-carrots-food-foodie.jpg"></a>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 categories">
+    <div class="thumbnail">
+      <a href="/products/jewellery"><img src="https://c1.wallpaperflare.com/preview/715/492/35/breakfast-carrots-food-foodie.jpg"></a>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 categories">
+    <div class="thumbnail">
+      <a href="/products/glasses"><img src="https://c1.wallpaperflare.com/preview/538/358/515/carrots-cooking-fresh-fruits.jpg"></a>
+    </div>
+  </div>
+</div>
+
+-->
+<br>
+<div class="button_cont"align="center" data-aos="zoom-in-up">
+  <a class="example_f" href="/products" target="_blank" rel="nofollow">
+    <span>Hottest Deals</a></div>
+<br>
+</br>
+    
+<div class="container">
+  
+<div class="box1" data-aos="fade-right" data-aos-duration="1500">
+    <p> Sun Farmer Veggies is a subsidiary of <strong style="font-weight: bold;">Sun Institute of Agricultural Sciences </strong> which was started in the year 2016. within a short span of it's establishment,
+      the institution has made a remarkable stride in the field of education offering various courses at Agriculture ( U.G, P.G, Diploma levels).
+       This milestone is achieved as the institution carved itself to import quality and career oriented education,
+      countering the challenge of the modern world through planning, dedication determination, prompt execution</p>
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="row top-row">
+    <div class="col-md-3" data-aos="fade-left">
+      <svg width="50%" height="50%" viewBox="-15 -15 100 100" xmlns="http://www.w3.org/2000/svg" fill="#ddd">
+        <image href="../images/floral.svg" x="0" y="0" height="90" width="85" />
+      </svg>
+      <h4>&check; Elegance</h4>
+      <p class=" about-txt">Chemical Free vegetables, Fruits.</p>
+    </div>
+    <div class="col-md-3" data-aos="fade-right">
+      <svg width="50%" height="50%" viewBox="-20 -25 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="../images/diamond.svg" x="0" y="0" height="60" width="60" />
+      </svg>
+      <h4>&check; Luxury</h4>
+      <p class=" about-txt">Rich natural taste.</p>
+    </div>
+    <div class="col-md-3" data-aos="fade-left">
+      <svg width="50%" height="50%" viewBox="-20 -25 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="../images/target.svg" x="0" y="0" height="60" width="60" />
+      </svg>
+      <h4>&check; Reliable</h4>
+      <p class=" about-txt">properly cultivated by Agri students.</p>
+    </div>
+    <div class="col-md-3" data-aos="fade-right">
+      <svg width="50%" height="50%" viewBox="-20 -25 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="../images/air-freight.svg" x="0" y="0" height="60" width="60" />
+      </svg>
+      <h4>&check; Delivery </h4>
+      <p class="">Delivered to all corners of the city.</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="button_cont" style=" display: flex;justify-content: center;" data-aos="zoom-in-up">
+  <h3 class="visitor">Visitors Count  <span id="countView"></h3>
+</div>
+<br>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  $(function() {  
+     AOS.init({
+       offset:200,
+      duration:1000,
+    });
+  });
+
+              if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
+            sessionStorage.setItem( 'doNotShow', true );               
+            $(function(){ // this replaces document.ready
+                setTimeout(function(){
+                  $('.preloader').fadeOut('slow', function() {
+                    $(this).remove();
+                  });
+                 }, 500);
+              });
+                              
+
+            } else {
+            
+              $(function(){ // this replaces document.ready
+                setTimeout(function(){
+                  $('.preloader').fadeOut('slow', function() {
+                    $(this).remove();
+                  });
+                 }, 0000);
+              });
+                              
+          }
+
+        const countEl = document.getElementById('countView');
+
+
+
+var user= sessionStorage.getItem('user');   
+updateVisitCount();
+console.log(user);
+function updateVisitCount() {
+
+  if (user==1)
+  {    
+	fetch('https://api.countapi.xyz/get/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+  }
+  else{
+    fetch('https://api.countapi.xyz/update/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+    sessionStorage.setItem("user",1)
+	})
+    
+  }
+}
+
+
+           
+  
+  </script>
+
+</body>
+</html>
+<% include _layouts/footer %>
+
+
+
+
