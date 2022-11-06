@@ -1,7 +1,6 @@
 /* -------------------------------------------------- */
 /* BASIC SETUP ====================================== */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -17,22 +16,21 @@ html,
 body {
   background-color: #fff;
   color: #555;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
 .top-row {
   max-width: 1140px;
   margin: 10px auto;
-
 }
 
 .container {
-  padding:18px;
+  padding: 18px;
   margin-top: 7px;
 }
 .container12345 {
-  padding:0px 18px 0px 18px;
+  padding: 0px 18px 0px 18px;
   margin-top: 38px;
 }
 
@@ -40,7 +38,7 @@ h1.page-header {
   color: #fff;
   background-color: #55c57a;
   width: 25%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   border: 1px solid #55c57a;
   border-radius: 3px;
   text-align: center;
@@ -54,8 +52,9 @@ h4 {
   /* text-align: center; */
 }
 
-h6, h2 {
-  font-family: 'Raleway', sans-serif;
+h6,
+h2 {
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
@@ -64,7 +63,7 @@ a.about {
   font-size: 25px;
   color: #555;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
@@ -146,7 +145,7 @@ p.spi-desc {
   font-size: 120%;
   font-weight: 700;
   border-top: 1px solid #555;
-  padding-top: 10px;;
+  padding-top: 10px;
 }
 
 ul.gallery li {
@@ -164,18 +163,16 @@ nav {
   background-color: #333;
 }
 
-.nav-item{
-
+.nav-item {
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .nav-link {
   padding: 1px;
   transition: all 0.2s;
 }
-
 
 .nav-link:hover {
   border-bottom: 1px solid #55c57a;
@@ -185,10 +182,9 @@ a.dropdown-toggle:hover {
   border-bottom: 0px;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   width: 95px;
   height: 80px;
-
 }
 
 .nav-link.sales {
@@ -196,7 +192,7 @@ a.dropdown-toggle:hover {
   outline-color: #55c57a;
   border: 1px solid #55c57a;
   border-radius: 1.5px;
-  translate: all .2s;
+  translate: all 0.2s;
 }
 
 .nav-link.sales:hover {
@@ -242,18 +238,17 @@ a.checkout {
 
 .dropdown-item {
   padding: 10px 10px 7px 6px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 input.form-control.search-input {
   width: 60%;
   padding-right: 20px;
- 
 }
 
 .search {
   background-color: #f4f2f2;
-  }
+}
 .search-input {
   border: none;
   background-color: #f4f2f2;
@@ -265,7 +260,7 @@ input.form-control.search-input {
   box-shadow: none;
   border: 2px solid#55c57a;
   background-color: #f0eeee;
- }
+}
 
 .search-input::-webkit-input-placeholder {
   color: #ccc;
@@ -290,7 +285,7 @@ div.product {
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   z-index: 10;
-  transition: all .2s;
+  transition: all 0.2s;
   outline-offset: 10px;
 }
 div.product-pimage {
@@ -300,13 +295,14 @@ div.product-pimage {
 div.product:hover {
   outline: 3px solid #55c57a;
   transform: scale(1.03) translateY(-3px);
-  box-shadow: 0 40px 64px rgba(0, 0, 0, 0.5); }
-
-div.product p {
-
+  box-shadow: 0 40px 64px rgba(0, 0, 0, 0.5);
 }
 
-.vd:link, .vd:visited {
+div.product p {
+}
+
+.vd:link,
+.vd:visited {
   font-size: 16px;
   color: #55c57a;
   /* float: right; */
@@ -314,7 +310,7 @@ div.product p {
   border: 1px solid transparent;
   border-radius: 3px;
   padding: 8px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .vd:hover {
@@ -363,7 +359,7 @@ table.table tr {
   text-align: center;
 }
 
-table.table th{
+table.table th {
   background: #55c57a;
   color: #fff;
 }
@@ -372,7 +368,7 @@ table.table th{
   vertical-align: middle;
 }
 
- a i.icon {
+a i.icon {
   color: #55c57a;
   font-size: 25px;
 }
@@ -425,14 +421,13 @@ footer {
 
 .footer-nav {
   list-style: none;
-
 }
 
 .footer-right {
   font-size: 25px;
 }
 
-.footer-nav li{
+.footer-nav li {
   display: inline-block;
   margin-right: 20px;
 }
@@ -442,13 +437,12 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited
-{
+.footer-nav li a:visited {
   text-decoration: none;
   border: 0;
   color: #888;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
@@ -490,23 +484,22 @@ footer p {
   https://dwtstore.com.ng/wp-content/uploads/2017/12/PlaceOrder.jpg
     https://www.voolsy.com/images/placeorder.png
 */
-  background: scroll center url('/images/clock-hours-minutes-9352.jpg');
+  background: scroll center url("/images/clock-hours-minutes-9352.jpg");
 
   background-size: cover;
   background-color: #55c57a;
-  background-blend-mode: color-dodge
+  background-blend-mode: color-dodge;
 }
 
-.card-img-left1{
+.card-img-left1 {
   width: 45%;
   /* Link to your background image using in the property below!                   https://www.voolsy.com/images/placeorder.png */
 
-  background: scroll center url('/images/clock-hours-minutes-9352.jpg');
+  background: scroll center url("/images/clock-hours-minutes-9352.jpg");
 
   background-size: cover;
   background-color: #55c57a;
-  background-blend-mode: color-dodge
-
+  background-blend-mode: color-dodge;
 }
 
 .card-signin .card-body {
@@ -522,7 +515,7 @@ footer p {
   font-size: 80%;
   border: 1px solid transparent;
   border-radius: 5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   padding: 0.5rem;
   transition: all 0.2s;
@@ -545,18 +538,20 @@ a.small {
   outline: none;
 }
 
-input:focus, input[type]:focus, .uneditable-input:focus {
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
   border-color: #55c57a;
   box-shadow: 1px 1px 10px 1px #55c57a;
   outline: 0 none;
 }
 
-.form-label-group>input,
-.form-label-group>label {
+.form-label-group > input,
+.form-label-group > label {
   /* padding: var(--input-padding-y) var(--input-padding-x); */
 }
 
-.form-label-group>label {
+.form-label-group > label {
   /* position: absolute;
   top: 0;
   left: 0;
@@ -596,7 +591,7 @@ input:focus, input[type]:focus, .uneditable-input:focus {
   padding-bottom: calc(var(--input-padding-y) / 3); */
 }
 
-.form-label-group input:not(:placeholder-shown)~label {
+.form-label-group input:not(:placeholder-shown) ~ label {
   /* padding-top: calc(var(--input-padding-y) / 3);
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
@@ -623,24 +618,24 @@ input:focus, input[type]:focus, .uneditable-input:focus {
   border-color: #ebccd1;
 }
 
-
-
-@media only screen and (min-width:1px) and (max-width : 360px) /*MOBILE(SMALL)*/
-{
+@media only screen and (min-width: 1px) and (max-width: 360px) /*MOBILE(SMALL) */ {
   .carousel-item {
     min-height: 300px;
+  }
 }
-
-}
-@media only screen and (min-width:361px) and (max-width:420px) /*MOBILE(MEDIUM)*/
-{
+@media only screen and (min-width: 361px) and (max-width: 420px) /*MOBILE(MEDIUM) */ {
   .carousel-item {
     min-height: 350px;
+  }
 }
-}
-@media only screen and (min-width:421px) and (max-width:625px) /*MOBILE(LARGE)*/
-{
+@media only screen and (min-width: 421px) and (max-width: 625px) /*MOBILE(LARGE) */ {
   .carousel-item {
     min-height: 400px;
+  }
 }
+
+.slappear svg {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
 }
