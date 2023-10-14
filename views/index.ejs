@@ -271,7 +271,7 @@ overflow-x: hidden;
 
 <br>
 <div class="button_cont" style=" display: flex;justify-content: center;" data-aos="zoom-in-up">
-  <h3 class="visitor">Visitors Count  <span id="countView"></h3>
+  <h3 class="visitor">Visitors Count  <span id="countView"></span></h3>
 </div>
 <br>
 
@@ -317,23 +317,25 @@ updateVisitCount();
 console.log(user);
 function updateVisitCount() {
 
-  if (user==1)
-  {    
-	fetch('https://api.countapi.xyz/get/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	})
-  }
-  else{
-    fetch('https://api.countapi.xyz/update/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97/?amount=1')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-    sessionStorage.setItem("user",1)
-	})
+  const currDate=
+		countEl.innerHTML = '1.8k'
+  // if (user==1)
+  // {    
+	// fetch('https://api.countapi.xyz/get/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97')
+	// .then(res => res.json())
+	// .then(res => {
+	// 	countEl.innerHTML = res.value;
+	// })
+  // }
+  // else{
+  //   fetch('https://api.countapi.xyz/update/www.sunfarmerveggies.ml/7d693a54-4d06-4921-9792-922529a23e97/?amount=1')
+	// .then(res => res.json())
+	// .then(res => {
+	// 	countEl.innerHTML = res.value;
+  //   sessionStorage.setItem("user",1)
+	// })
     
-  }
+  // }
 }
 
 
