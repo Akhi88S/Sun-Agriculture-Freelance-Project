@@ -35,6 +35,6 @@
     "sessionstorage": "^0.1.0"
   },
   "engines": {
-    "node": ">=14.20.1"
+    "node": ">=18.x"
   }
 }
